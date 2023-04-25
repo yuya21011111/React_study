@@ -1,5 +1,0 @@
-## Git
-
-git add -A .  
-git commit -m "Guard"
-git push origin main 
