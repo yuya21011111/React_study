@@ -1,7 +1,7 @@
 const Example = () => {
   return (
     <div>
-      <h3>endフォルダのコード</h3>
+      <h3 className="component">endフォルダのコード</h3>
     </div>
   );
 };
