@@ -5,12 +5,28 @@
 
 import "./Child.css";
 
-const Child = () => {
+// const Child = (props) => {
+
+//   console.log(props);
+//   return (
+//     <div className={`component ${props.color}`}>
+//       <h3>Hello Component</h3>
+//     </div>
+//   );
+// };
+
+const Child = ({ color = 'green' }) => { // "color"というプロパティを持つオブジェクトが渡されるようになっている。もしプロパティ"color"が未定義の場合、初期値として"green"が代入される。
+  
+  console.log(color); // "color"の値をコンソールに出力する
+
   return (
-    <div className="component">
-      <h3>Hello Component</h3>
+    <div className={`component ${color}`}> 
+      <h3>Hello Component</h3> 
     </div>
   );
 };
+
+/* 「Child」という関数をエクスポートしている */
+
 
 export default Child;

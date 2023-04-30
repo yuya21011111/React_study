@@ -1,0 +1,4 @@
+.expression {
+    color: green; /* 文字色を緑色に設定している */
+    border: 5px solid green; /* 枠線を幅5ピクセルで緑色に設定している */
+}
