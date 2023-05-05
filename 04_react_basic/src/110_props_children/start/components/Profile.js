@@ -1,6 +1,6 @@
 import "./Profile.css";
 
-const Profile = ({ name, age, country, color }) => {
+const Profile = ({ name = '???', age = '???', country = '???', color ='green' }) => {
   return (
     <div className={`profile ${color}`}>
       <h3>Name: {name}</h3>
