@@ -13,19 +13,27 @@ const Example = () => {
           onFocus={() => console.log("onFocus検知")}
         />
       </label>
-      {/* <div>
+      <div>
         <label>
-          入力値を取得：
+          入力値を取得：onClick
           <input type="text" onChange={(e) => console.log(e.target.value)} />
         </label>
-      </div> */}
-      {/* <div
+        <label>
+          入力値を取得：onBlur
+          <input type="text" onBlur={(e) => console.log(e.target.value)} />
+        </label>
+        <label>
+          入力値を取得：onFocus
+          <input type="text" onFocus={(e) => console.log(e.target.value)} />
+        </label>
+      </div>
+      <div
         className="hover-event"
         onMouseEnter={() => console.log("カーソルが入ってきました。")}
         onMouseLeave={() => console.log("カーソルが出ていきました。")}
       >
         ホバーしてね！
-      </div> */}
+      </div>
     </div>
   );
 };
