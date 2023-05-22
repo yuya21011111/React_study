@@ -8,12 +8,14 @@ const Profile = ({ name, age, hobbies }) => {
         <div>Hobby:</div>
         <ul>
           {hobbies.map((hobby) => (
-            <li>{hobby}</li>
+            /* リストにはkeyを設定することを忘れないように！ */
+            <li key={hobby}>{hobby}</li>
           ))}
         </ul>
       </div>
     </div>
   );
 };
+
 
 export default Profile;
