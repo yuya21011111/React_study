@@ -23,13 +23,16 @@ const Todo = () => {
       return todo.id !== id;
     });
     console.log(newTodos);
-
     setTodos(newTodos);
+  }
+
+  const addTodoList = (todo) => {
+    setTodos([...todos,todo])
   }
   return (
     <>
       <List todos={todos} deleteTodo={deleteTodo} />
-      <Form />
+      <Form addTodoList={addTodoList} />
     </>
   )
 };
