@@ -1,5 +1,5 @@
 import styled from "styled-components";
-
+import { useState } from "react";
 const FirstButton = styled.button`
   display: inline-block;
   border-radius: 3px;
@@ -7,6 +7,16 @@ const FirstButton = styled.button`
   margin: 0.5rem 1rem;
   width: 11rem;
   border: none;
+  background-color: pink;
+`;
+
+const SecondButton = styled(FirstButton)`
+  background-color: red;
+  color: white;
+`;
+
+const ThirdButton = styled(SecondButton)`
+  background-color: ${(props) => props.dark ? "black" : "green"};
 `;
 
 const Example = () => {
@@ -28,6 +38,9 @@ const Example = () => {
         </ul>
       </p>
       <FirstButton>ボタン1</FirstButton>
+      <SecondButton>ボタン2</SecondButton>
+      <ThirdButton >ボタン3</ThirdButton>
+      <ThirdButton dark >ボタン3</ThirdButton>
     </>
   );
 };
