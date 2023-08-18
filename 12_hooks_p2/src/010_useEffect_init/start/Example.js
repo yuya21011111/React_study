@@ -2,6 +2,7 @@ import {useState,useEffect} from "react";
 const Example = () => {
   const [time,setTime] = useState(0);
 
+  // 1秒ずつ進む
   useEffect(() => {
     console.log("useEffectOk")
     window.setInterval(() => {
